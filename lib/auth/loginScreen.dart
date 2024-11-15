@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kenoz/main_screen/HomeScreen.dart';
 import 'package:kenoz/utils/CustomElevatedButton.dart';
 import 'package:kenoz/utils/Custom_roundedBox.dart';
 
@@ -61,7 +62,9 @@ class Loginscreen extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    CustomButton(title: 'Send Code', onPressed: (){}),
+                    CustomButton(title: 'Send Code', onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> Homescreen()));
+                    }),
                   
                   ],
                 ),
